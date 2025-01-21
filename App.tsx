@@ -99,7 +99,7 @@ const App = () => {
           <Ionicons name="search-outline" size={28} color="black" />
           <Image style={styles.bottomBarIcon} source={{uri: "https://media.istockphoto.com/id/1265127017/vector/instagramm-reels-icon-line-vector-illustration.jpg?s=612x612&w=0&k=20&c=nZnBU983UH35mAmwoxtJHyLVLNo6y-DG6BDDRc_t9HY="}}></Image>
           <Image style={styles.bottomBarIcon1} source={{uri: "https://cdn.iconscout.com/icon/free/png-256/free-instagram-shop-icon-download-in-svg-png-gif-file-formats--logo-shopping-menu-brand-social-media-pack-user-interface-icons-4109073.png"}}></Image>
-          <Ionicons name="person-outline" size={28} color="black" />
+          <Ionicons name="person" size={28} color="black" />
         </View>
       </View>
     </SafeAreaView>
