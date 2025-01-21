@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView, Image, Button, Alert } from "react-native";
-import { Ionicons } from '@expo/vector-icons';
+import { Feather, Ionicons } from '@expo/vector-icons';
 
 const App = () => {
 
@@ -42,11 +42,14 @@ const App = () => {
             style={styles.postImage}
           />
         </View>
+        
         {/* Icons Section */}
         <View style={styles.iconRow}>
           <Ionicons name="heart-outline" size={24} color="black" style={styles.icon} />
           <Ionicons name="chatbubble-outline" size={24} color="black" style={styles.icon} />
-          <Ionicons name="paper-plane-outline" size={24} color="black" style={styles.icon} />
+          <Ionicons name="paper-plane-outline" size={24} color="black" style={styles.icon} />    
+          <Feather name="bookmark" size={24} color="black" style={styles.featherIcon} />       
+          
         </View>
         {/* Post Footer */}
         <View style={styles.postFooter}>
@@ -269,8 +272,12 @@ timeStamp:{
 
 ellipsis:{
   marginRight: 16,
-}
+},
 
+featherIcon: {
+  marginLeft: 220,
+  fontWeight: "bold"
+}
 
 });
 
