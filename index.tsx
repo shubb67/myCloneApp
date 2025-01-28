@@ -1,10 +1,16 @@
-import { View, Text, Button } from "react-native";
+import { View, Text, FlatList } from "react-native";
+import fruits from "../components/List";
 
 export default function Index() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Text>Welcome to the App!</Text>
-      <Button title="Click Me" onPress={() => alert("Button Pressed!")} />
+      <FlatList
+        data={fruits}
+        renderItem={({ item }) => <Text>{item}</Text>}
+        keyExtractor={(item) => item}
+      />
     </View>
   );
 }
+
